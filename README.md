@@ -35,4 +35,39 @@ The project demonstrates strong understanding of React fundamentals including co
 ---
 
 ## 📂 Project Structure
+src/
+│
+├── pages/
+│ ├── Home.jsx
+│ ├── BMICalculator.jsx
+│ └── Result.jsx
+│
+├── data.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+
+---
+
+## 📊 BMI Formula
+
+BMI is calculated using:
+
+BMI = weight (kg) / (height in meters × height in meters
+
+### BMI Categories
+
+| Category      | BMI Range        |
+|--------------|------------------|
+| Underweight  | Less than 18.5   |
+| Normal       | 18.5 – 24.9      |
+| Overweight   | 25 – 29.9        |
+| Obese        | 30 and above     |
+
+---
+
+## 🖥️ Installation & Setup Guide
+
+### 1️⃣ Clone the Repository
+
 
