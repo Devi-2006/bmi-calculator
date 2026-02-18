@@ -1,16 +1,38 @@
-# React + Vite
+# 🧮 BMI Calculator – React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **BMI (Body Mass Index) Calculator** built using **React.js**.  
+This application calculates BMI based on user input and dynamically displays the corresponding health category along with a related image.
 
-Currently, two official plugins are available:
+The project demonstrates strong understanding of React fundamentals including component structure, routing, conditional rendering, and data-driven UI updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Live Demo Link: (Add after deploying to Netlify or Vercel)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Key Features
+
+- 🔢 Calculates BMI using height and weight
+- 📊 Automatically determines BMI category
+- 🖼 Displays dynamic image based on result
+- 🔁 Multi-page navigation using React Router
+- 🧩 Category mapping using structured data
+- 🎨 Clean, responsive UI design
+- 📁 Organized and scalable project structure
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – Frontend library
+- **React Router DOM** – Routing
+- **Vite** – Build tool
+- **CSS** – Styling
+
+---
+
+## 📂 Project Structure
+
