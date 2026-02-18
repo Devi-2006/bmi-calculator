@@ -1,0 +1,77 @@
+/* Full Screen Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card Container */
+.container {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 10px 18px;
+  margin-top: 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+/* Result Image */
+img {
+  margin-top: 15px;
+  width: 230px;
+  border-radius: 12px;
+}
+
+/* Result Text */
+.result-text {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
+}
