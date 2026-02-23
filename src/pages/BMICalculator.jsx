@@ -1,26 +1,45 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const BMICalculator = () => {
+function BMICalculator() {
+  const [name, setName] = useState("");
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
+
   const navigate = useNavigate();
 
   const calculateBMI = () => {
-    if (!height || !weight) {
-      alert("Please enter height and weight");
+    const trimmedName = name.trim();
+
+    if (!trimmedName || !height || !weight) {
+      alert("Please fill all fields");
       return;
     }
 
-    const h = height / 100;
-    const bmi = (weight / (h * h)).toFixed(2);
+    if (height <= 0 || weight <= 0) {
+      alert("Height and Weight must be positive values");
+      return;
+    }
 
-    navigate("/result", { state: { bmi } });
+    const heightMeter = height / 100;
+    const bmiValue = weight / (heightMeter * heightMeter);
+    const bmi = bmiValue.toFixed(2);
+
+    navigate("/result", {
+      state: { name: trimmedName, bmi }
+    });
   };
 
   return (
     <div className="container">
       <h2>BMI Calculator</h2>
+
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
       <input
         type="number"
@@ -41,6 +60,6 @@ const BMICalculator = () => {
       </button>
     </div>
   );
-};
+}
 
 export default BMICalculator;
