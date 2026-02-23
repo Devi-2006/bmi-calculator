@@ -66,8 +66,5 @@ BMI = weight (kg) / (height in meters × height in meters
 
 ---
 
-## 🖥️ Installation & Setup Guide
-
-### 1️⃣ Clone the Repository
 
 
